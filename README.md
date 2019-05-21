@@ -1,5 +1,9 @@
 # Basic Chatbot using RASA 
 
+## Business scenario 
+
+Chatbot solution was now start adopt by business & organization to handle their user request and inquiry. In the example below, we try to develop a simple chatbot to handle service inquiry and complaint 
+
 ![](insightflows_chatbot2.gif)
 
 

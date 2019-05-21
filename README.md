@@ -1,18 +1,16 @@
-# Basic Chatbot using RASA
+# Basic Chatbot using RASA 
+
+![](insightflows_chatbot2.gif)
 
 
-![alt text](https://github.com/LutherTeh/chatbot/insightflows_chatbot2.gif" demo.gif")
 
-
-## What to Install
+## Setup 
 
 #### Install Rasa NLU
 
 `$pip install rasa_nlu`
 
 #### Install Rasa Core
-
-I am installing from Git.
 
 ```
 
@@ -22,13 +20,6 @@ $pip install -r requirements.txt
 $pip install -e .
 ```
 
-
-#### How to find rasa_core and rasa_nlu version
-
-```
-$python -c "import rasa_nlu; print(rasa_nlu.__version__);"
-$python -c "import rasa_core; print(rasa_core.__version__);"
-```
 
 
 ## Step 1 - Collect conversation data 

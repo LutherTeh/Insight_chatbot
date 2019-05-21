@@ -1,0 +1,59 @@
+slots:
+  product:
+    type: text
+  router:
+    type: text
+  info:
+    type: text
+  public_service:
+    type: text
+
+intents:
+ - greet
+ - goodbye
+ - order_product
+ - info_search
+ - complaint
+
+entities:
+ - product
+ - router
+ - info
+ - public_service
+
+templates:
+  utter_greet:
+  - text: "Hey! How are you?"
+    buttons:
+    - title: "great"
+      payload: "great"
+    - title: "super sad"
+      payload: "super sad"
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://cdn77.eatliver.com/wp-content/uploads/2017/10/trump-frog.jpg"
+  utter_goodbye:
+    - 'Talk to you later.'
+    - 'Bye'
+  utter_affirm:
+    - 'Thats right'
+    - 'You are correct'
+  utter_ask_product_name:
+    - 'Which product you look for?'
+  utter_complaint:
+    - 'Sorry to hear that, may i know more information'
+    - 'Sorry for any inconvenience, may i know more information'
+  utter_ask_info_name:
+    - 'Which type of info or public service you looking for?'
+
+actions:
+ - utter_greet
+ - utter_goodbye
+ - utter_affirm
+ - utter_ask_product_name
+ - utter_ask_order_product
+ - utter_ask_info_name
+ - action_order_product
+ - action_info_search
+ - actions.ActionOrderProduct
+ - actions.ActionInfoSearch
